@@ -20,10 +20,6 @@ body{
     min-width: 100vw;
 }
 
-/* .container{
-    padding: 0 10%;
-} */
-
 p{
     font-size: 12px;
     letter-spacing: .15rem;
@@ -58,22 +54,29 @@ a:hover{
 
 /*** NAVBAR ***/
 nav{
+    width: 100vw;
+    height: 81px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    z-index: 100;
+}
+
+nav .nav-wrapper{
+    width: 80%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 1.5rem;
-    left: 10%;
-    width: 100%;
-    z-index: 1000;
 }
 
 nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 5%;
-    margin-right: 20.5%;
+    gap: 1rem;
 }
 
 nav ul li a{
@@ -438,29 +441,31 @@ footer .footer-content .content-wrapper .contact i{
 body.detail{
     background-color: var(--white);
 }
-.nav-detail{
-    width: 100vw;
-    left: 0;
-    top: 0;
-    padding: 1.5rem 0  1.5rem 15%;
-    background-color: var(--dark-blue);
-}
+
+/** HEADER **/
 .header-detail{
-    height: 110vh;
+    height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../img/bgr/archi.jpg);
-    background-position: center center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1591700331354-f7eea65d1ce8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-position: center 1rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin-bottom: 0;
 }
+
+/** ABOUT **/
 .detail-content{
     width: 100vw;
     height: 100vh;
+    margin: 10% 0;
 }
 
 .detail-content .detail-description{
     position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .detail-content .detail-description .detail-img{
@@ -472,4 +477,58 @@ body.detail{
     background-size: cover;
     background-position: center;
     box-shadow: -1rem 1rem 0 var(--dark-blue);
+}
+
+.detail-content .detail-description .description-content{
+    width: 50vw;
+    color: var(--dark-blue);
+    padding: 0 10%;
+}
+
+.detail-content .detail-description .description-content h1{
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .detail-content{
+        height: 50vh;
+    }
+    .detail-content .detail-description .description-content{
+        width: 100vw;
+    }
+    .detail-content .detail-description .detail-img{
+        display: none;
+    }
+}
+
+/** TESTIMONI **/
+.testimoni{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0e0e0e;
+    text-align: center;
+    padding: 30% 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.testimoni p{
+    font-size: 3rem;
+}
+
+.testimoni h3{
+    margin-top: 2rem;
+    color: var(--tosca);
+}
+
+@media screen and (max-width: 900px) {
+    .testimoni p{
+        font-size: 1.5rem;
+    }
+    .testimoni{
+        font-size: 1rem;
+    }
 }
