@@ -540,13 +540,37 @@ body.detail{
 /** SAMPLE **/
 .sample{
     width: 100vw;
-    height: 100vh;
-    padding: 4rem 0;
+    height: 130vh;
+    padding: 8rem 0 0 0;
     text-align: center;
-    background-image: url(../img/bgr/detail-dummy.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.sample button{
+    margin-bottom: 5rem;
+}
+
+.sample .img-wrapper{
+    display: flex;
+    position: relative;
+}
+
+.sample .img-wrapper img.mac{
+    height: 600px;
+    position: absolute;
+    left: -10vw;
+    filter: drop-shadow(-1.2rem .7rem 1rem rgba(0, 0, 0, 0.5));
+    -webkit-filter: drop-shadow(-1.2rem .7rem 1rem rgba(0, 0, 0, 0.5));
+}
+
+.sample .img-wrapper img.mob{
+    height: 600px;
+    position: absolute;
+    right: 15vw;
+    filter: drop-shadow(-1rem .7rem 1rem rgba(0, 0, 0, 0.25));
+    -webkit-filter: drop-shadow(-1rem .7rem 1rem rgba(0, 0, 0, 0.25));
 }
 
 .detail footer{
