@@ -13,12 +13,13 @@
     <title>Sirius Creative</title>
 </head>
 <body>
+    <button id="back-to-top" onclick="scrollToTop()"><i class="bi bi-arrow-up-short"></i></button>
     <header>
         <nav class="container">
             <div class="nav-wrapper">
                 <div class="nav-brand">
                     <a href="index.html">
-                        <img src="assets/img/logo/SIRIUS.png" alt="brand">
+                        <img src="assets/img/logo/SIRIUS.png" alt="brand" loading="lazy">
                     </a>
                 </div>
                 <ul class="nav-sosmed">
@@ -28,7 +29,7 @@
             </div>
         </nav>
         <div class="header-content">
-            <img src="assets/img/title/header.png" alt="">
+            <img src="assets/img/title/header.png" alt="header-bgr" loading="lazy">
         </div>
         <div class="see-more">
             <p>Lihat Selengkapnya</p>
@@ -40,7 +41,7 @@
             <p>About Us</p>
         </div>
         <div class="about-title">
-            <img src="assets/img/title/about.png" alt="about-title"/>
+            <img src="assets/img/title/about.png" alt="about-title" loading="lazy"/>
         </div>
         <div class="about-content">
             <div class="about-us">
@@ -56,7 +57,7 @@
             <p>Service</p>
         </div>
         <div class="service-title">
-            <img src="assets/img/title/services.png" alt="service-title"/>
+            <img src="assets/img/title/services.png" alt="service-title" loading="lazy"/>
         </div>
         <div class="services-content">
             <div class="service-wrapper">
@@ -78,14 +79,22 @@
             <p>Work</p>
         </div>
         <div class="work-title">
-            <img src="assets/img/title/portfolio.png" alt="service-title"/>
+            <img src="assets/img/title/portfolio.png" alt="service-title" loading="lazy"/>
         </div>
-        <div class="work-item archi">
+        <div class="work-item archi" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(assets/img/bgr/archi.webp);">
             <h1>ARCHI TEKNIK CONSULTANT</h1>
             <a href="portfolio-detail.html"><button>View</button></a>
         </div>
-        <div class="work-item agit">
+        <div class="work-item agit" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(assets//img/bgr/agit.webp);">
             <h1>AGIT & CO PHOTO AND FILM</h1>
+            <button>View</button>
+        </div>
+        <div class="work-item med" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(assets//img/bgr/medical.webp);">
+            <h1>HOSPITAL MANAGEMENT SYSTEM</h1>
+            <button>View</button>
+        </div>
+        <div class="work-item agit" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(assets//img/bgr/sef.png);">
+            <h1>SEF UGM</h1>
             <button>View</button>
         </div>
         <div class="more-work">
@@ -137,11 +146,11 @@
     </section>
     <footer>
         <div class="footer-img">
-            <img src="assets/img/logo/logo_sirius-tosca.png" alt="logo-sirius">
+            <img src="assets/img/logo/logo_sirius-tosca.png" alt="logo-sirius" loading="lazy">
         </div>
         <div class="footer-content">
             <div class="img-content">
-                <img src="assets/img/logo/SIRIUS CREATIVE Footer.png" alt="sirius-dot">
+                <img src="assets/img/logo/SIRIUS CREATIVE Footer.png" alt="sirius-dot" loading="lazy">
             </div>
             <div class="content-wrapper">
                 <div class="quick-link">
@@ -167,4 +176,5 @@
         <h4>© Sirius Creative Ltd, 2022.</h4>
     </div>
 </body>
+<script src="./assets/js/script.js"></script>
 </html>

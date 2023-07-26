@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 :root{
     --dark-blue: #232E40;
@@ -57,6 +58,32 @@ button:hover{
     cursor: pointer;
 }
 
+/** BACK TO TOP **/
+#back-to-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: none;
+}
+
+#back-to-top:hover{
+    border: 1px solid var(--tosca);
+}
+
+
 /** SUBTITLE **/
 .sub-title{
     text-align: center;
@@ -85,7 +112,7 @@ nav{
 }
 
 nav .nav-wrapper{
-    width: 80%;
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -154,7 +181,7 @@ header .see-more p{
         height: 93vh;
     }
     .header-content img{
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -203,7 +230,7 @@ header .see-more p{
 
 @media screen and (max-width: 900px) {
     .about-section .about-title img{
-        width: 50%;
+        width: 80%;
     }
 
     .about-section .about-content .box-content h1{
@@ -245,7 +272,7 @@ header .see-more p{
 
 @media screen and (max-width: 900px) {
     .service-section .service-title img{
-        width: 50%;
+        width: 80%;
     }
     .services-content{
         padding: 0 20%;
@@ -257,7 +284,8 @@ header .see-more p{
 /** WORK **/
 .work-section{
     width: 100vw;
-    margin-bottom: 12rem;
+    padding-top: 11rem;
+    margin-bottom: 6rem;
 }
 
 .work-section .work-title{
@@ -283,14 +311,6 @@ header .see-more p{
     align-items: center;
 }
 
-.work-section .work-item.archi{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/bgr/archi.jpg);
-}
-
-.work-section .work-item.agit{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/bgr/agit.jpg);
-}
-
 .work-section .more-work button:hover{
     border: 1px solid var(--tosca);
 }
@@ -299,20 +319,24 @@ header .see-more p{
     font-size: 5rem;
     text-align: center;
     margin-bottom: 2rem;
-    line-height: 3rem;
+    line-height: 100%;
 }
 
 .work-section .more-work{
     text-align: center;
-    padding: 5% 0;
+    padding: 7% 0;
 }
 
 @media screen and (max-width: 900px) {
     .work-section .work-title img{
-        width: 80%;
+        width: 90%;
     }
     .work-section .work-item h1{
         font-size: 3rem;
+    }
+    .work-section .work-item{
+        height: 50vh;
+        background-attachment: scroll;
     }
 }
 
@@ -363,7 +387,7 @@ header .see-more p{
 /** FOOTER **/
 footer{
     width: 100vw;
-    padding: 6rem 0;
+    padding: 8rem 0;
     display: flex;
     justify-content: space-evenly;
     color: var(--tosca);
@@ -446,7 +470,7 @@ body.detail{
 .header-detail{
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1591700331354-f7eea65d1ce8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../img/bgr/agit.jpg");
     background-position: center 1rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -491,6 +515,10 @@ body.detail{
 
 .detail-content .detail-description .description-content h1{
     font-size: 2.5rem;
+}
+
+.detail-content .detail-description .description-content p{
+    text-align: justify;
 }
 
 @media screen and (max-width: 900px) {
