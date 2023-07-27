@@ -124,7 +124,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 nav ul li a{
@@ -139,7 +139,7 @@ nav .nav-brand img{
 
 @media screen and (max-width: 900px) {
     nav ul{
-        width: 8%;
+        width: 10%;
     }
     
 }
@@ -147,6 +147,8 @@ nav .nav-brand img{
 @media screen and (max-width: 600px) {
     nav ul{
         width: 13%;
+        gap: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -365,8 +367,21 @@ header .see-more p{
     width: 100%;
 }
 
+.package-item hr{
+    margin-bottom: 1rem;
+}
+
+.package-item h3{
+    margin-bottom: .5rem;
+}
+
 .package-item .price{
     margin-bottom: 1rem;
+}
+
+.package-item ul li{
+    font-size: .7rem;
+    margin-bottom: .7rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -651,6 +666,20 @@ body.detail{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.pagination ul li{
+    transition: all ease-in-out .25s;
+    -webkit-transition: all ease-in-out .25s;
+    -moz-transition: all ease-in-out .25s;
+    -ms-transition: all ease-in-out .25s;
+    -o-transition: all ease-in-out .25s;
+}
+
+.pagination ul li:hover{
+    color: var(--tosca);
+    font-weight: 900;
+    cursor: pointer;
 }
 
 .pagination ul li:first-child{
